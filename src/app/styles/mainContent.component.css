@@ -6,10 +6,6 @@
     
 }
 
-.generic-card{
-    width: 100%;
-}
-
 .card-wrap{
     padding:2rem; 
     display: flex;
@@ -18,3 +14,8 @@
     flex-basis: auto;
     justify-content: center;
 }
+
+.generic-card{
+    width: 100%;
+}
+
