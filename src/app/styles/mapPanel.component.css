@@ -1,0 +1,9 @@
+.header-panel {
+  flex-grow: 1;
+}
+
+.header-panel-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
