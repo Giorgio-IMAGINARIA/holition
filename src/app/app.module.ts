@@ -5,6 +5,7 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 // Components
 import { AppComponent } from './app.component';
 import { AppBarComponent } from './components/appBar.component';
+import { MainContentComponent } from './components/mainContent.component';
 import {
   MatTabsModule,
   MatFormFieldModule,
@@ -32,7 +33,8 @@ import 'hammerjs';
 @NgModule({
   declarations: [
     AppComponent,
-    AppBarComponent
+    AppBarComponent,
+    MainContentComponent
   ],
   imports: [
     BrowserModule,

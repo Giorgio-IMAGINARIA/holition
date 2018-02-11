@@ -1,0 +1,12 @@
+#mainbar-style {
+  top: 0;
+  position: fixed;
+  z-index: 999;
+  font-weight: 400;
+  height: 56px;
+  padding: 8px 16px;
+}
+
+#mainbar-title-style {
+    flex: 1 1 auto;
+}

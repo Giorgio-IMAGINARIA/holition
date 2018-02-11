@@ -1,0 +1,20 @@
+.main-content-wrap{
+    margin-top: 56px;
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    
+}
+
+.generic-card{
+    width: 100%;
+}
+
+.card-wrap{
+    padding:2rem; 
+    display: flex;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: auto;
+    justify-content: center;
+}
