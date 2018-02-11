@@ -6,6 +6,7 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { AppComponent } from './app.component';
 import { AppBarComponent } from './components/appBar.component';
 import { MainContentComponent } from './components/mainContent.component';
+import { MapPanelComponent } from './components/mapPanel.component';
 import {
   MatTabsModule,
   MatFormFieldModule,
@@ -34,7 +35,8 @@ import 'hammerjs';
   declarations: [
     AppComponent,
     AppBarComponent,
-    MainContentComponent
+    MainContentComponent,
+    MapPanelComponent
   ],
   imports: [
     BrowserModule,
