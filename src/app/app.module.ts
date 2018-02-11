@@ -1,6 +1,8 @@
+// Angular modules
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { HttpClientModule } from '@angular/common/http';
 
 // Components
 import { AppComponent } from './app.component';
@@ -27,6 +29,8 @@ import {
   MatMenuModule,
   MatSelectModule
 } from '@angular/material';
+// Services
+import { MapService } from './services/map.service';
 // External modules
 import 'hammerjs';
 
@@ -58,9 +62,10 @@ import 'hammerjs';
     MatInputModule,
     MatTooltipModule,
     MatMenuModule,
-    MatSelectModule
+    MatSelectModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [MapService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

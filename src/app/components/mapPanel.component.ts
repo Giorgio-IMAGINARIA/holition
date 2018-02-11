@@ -1,11 +1,24 @@
 // ANGULAR COMPONENTS
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { MapService } from '../services/map.service';
+import * as L from 'leaflet';
+import { Map } from 'leaflet';
 
 @Component({
     selector: 'mapPanel',
     templateUrl: '../templates/mapPanel.component.html',
     styleUrls: ['../styles/mapPanel.component.css']
 })
-export class MapPanelComponent {
-    constructor() { }
+export class MapPanelComponent implements OnInit {
+    constructor(
+        private mapService: MapService,
+    ) { }
+
+    ngOnInit(): void {
+        this.requestData();
+    }
+    private requestData(): void {
+        this.mapService.requestData();
+    }
+
 }
