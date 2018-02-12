@@ -9,6 +9,7 @@ import { AppComponent } from './app.component';
 import { AppBarComponent } from './components/appBar.component';
 import { MainContentComponent } from './components/mainContent.component';
 import { MapPanelComponent } from './components/mapPanel.component';
+import { MapDetailsComponent } from './components/mapDetails.component';
 import {
   MatTabsModule,
   MatFormFieldModule,
@@ -40,7 +41,8 @@ import 'hammerjs';
     AppComponent,
     AppBarComponent,
     MainContentComponent,
-    MapPanelComponent
+    MapPanelComponent,
+    MapDetailsComponent
   ],
   imports: [
     BrowserModule,

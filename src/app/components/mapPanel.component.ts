@@ -1,8 +1,6 @@
 // ANGULAR COMPONENTS
 import { Component, OnInit } from '@angular/core';
 import { MapService } from '../services/map.service';
-import * as L from 'leaflet';
-import { Map } from 'leaflet';
 
 @Component({
     selector: 'mapPanel',
