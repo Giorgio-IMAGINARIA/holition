@@ -86,7 +86,6 @@ export class MapService {
 
 
     requestData(): void {
-        console.log('mensola');
         let fullAddress: string = 'https://cors-anywhere.herokuapp.com/http://api.openweathermap.org/data/2.5/weather';
         let params: HttpParams = new HttpParams();
         params = params.append('q', 'London,uk');
@@ -101,7 +100,6 @@ export class MapService {
             }
         ).subscribe(
             (data: any) => {
-                console.log('MapData: ', data);
                 this.setMapState(data);
             }, (err: HttpErrorResponse) => {
                 console.error(err);

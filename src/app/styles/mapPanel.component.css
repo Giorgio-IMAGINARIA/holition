@@ -1,9 +1,12 @@
-.header-panel {
-  flex-grow: 1;
-}
-
-.header-panel-left {
+#avatar-wrapper {
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
+  justify-content: center;
+  background-color: #F44336;
+}
+#panel-avatar{
+  color: #FFFFFF;
+}
+#card-content{
+  border: 1px dashed grey;
 }
