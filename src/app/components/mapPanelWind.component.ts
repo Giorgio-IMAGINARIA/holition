@@ -44,7 +44,7 @@ interface MapDetails {
 @Component({
     selector: 'mapPanelWind',
     templateUrl: '../templates/mapPanelWind.component.html',
-    styleUrls: ['../styles/mapPanel.component.css']
+    styleUrls: ['../styles/mapPanel.component.css', '../styles/windPanel.component.css']
 })
 export class MapPanelWindComponent implements OnInit {
     //Listeners 

@@ -44,7 +44,7 @@ interface MapDetails {
 @Component({
     selector: 'mapPanelGeneral',
     templateUrl: '../templates/mapPanelGeneral.component.html',
-    styleUrls: ['../styles/mapPanel.component.css']
+    styleUrls: ['../styles/mapPanel.component.css', '../styles/generalPanel.component.css']
 })
 export class MapPanelGeneralComponent implements OnInit {
     //Listeners 

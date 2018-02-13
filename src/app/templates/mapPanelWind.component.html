@@ -1,6 +1,6 @@
 <mat-card-header>
-  <div mat-card-avatar id="avatar-wrapper">
-    <mat-icon id="panel-avatar">home</mat-icon>
+  <div mat-card-avatar class="avatar-wrapper-cloud avatar-wrapper">
+    <mat-icon id="panel-avatar">toys</mat-icon>
   </div>
   <mat-card-title>Weather forecast - Wind</mat-card-title>
   <mat-card-subtitle>Wind details</mat-card-subtitle>
@@ -8,15 +8,13 @@
 <mat-card-content>
   <mat-list>
     <mat-list-item>
-      <mat-icon mat-list-icon>folder</mat-icon>
-      <h4 mat-line>Degree</h4>
+      <h4 mat-line>Degree:</h4>
       <p mat-line> {{weatherObjectToShow.wind.deg}} </p>
     </mat-list-item>
   </mat-list>
   <mat-list>
     <mat-list-item>
-      <mat-icon mat-list-icon>folder</mat-icon>
-      <h4 mat-line>Speed</h4>
+      <h4 mat-line>Speed:</h4>
       <p mat-line> {{weatherObjectToShow.wind.speed}} </p>
     </mat-list-item>
   </mat-list>

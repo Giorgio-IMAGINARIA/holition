@@ -1,6 +1,6 @@
 <mat-card-header>
-  <div mat-card-avatar id="avatar-wrapper">
-    <mat-icon id="panel-avatar">home</mat-icon>
+  <div mat-card-avatar class="avatar-wrapper-cloud avatar-wrapper">
+    <mat-icon id="panel-avatar">language</mat-icon>
   </div>
   <mat-card-title>Weather forecast - System</mat-card-title>
   <mat-card-subtitle>System details</mat-card-subtitle>
@@ -8,43 +8,37 @@
 <mat-card-content>
   <mat-list>
     <mat-list-item>
-      <mat-icon mat-list-icon>folder</mat-icon>
-      <h4 mat-line>Country</h4>
+      <h4 mat-line>Country:</h4>
       <p mat-line> {{weatherObjectToShow.sys.country}} </p>
     </mat-list-item>
   </mat-list>
   <mat-list>
     <mat-list-item>
-      <mat-icon mat-list-icon>folder</mat-icon>
-      <h4 mat-line>Id</h4>
+      <h4 mat-line>Id:</h4>
       <p mat-line> {{weatherObjectToShow.sys.id}} </p>
     </mat-list-item>
   </mat-list>
   <mat-list>
     <mat-list-item>
-      <mat-icon mat-list-icon>folder</mat-icon>
-      <h4 mat-line>Message</h4>
+      <h4 mat-line>Message:</h4>
       <p mat-line> {{weatherObjectToShow.sys.message}} </p>
     </mat-list-item>
   </mat-list>
   <mat-list>
     <mat-list-item>
-      <mat-icon mat-list-icon>folder</mat-icon>
-      <h4 mat-line>Sunrise</h4>
+      <h4 mat-line>Sunrise:</h4>
       <p mat-line> {{weatherObjectToShow.sys.sunrise | date: "HH:mm:ss"}} </p>
     </mat-list-item>
   </mat-list>
   <mat-list>
     <mat-list-item>
-      <mat-icon mat-list-icon>folder</mat-icon>
-      <h4 mat-line>Sunset</h4>
+      <h4 mat-line>Sunset:</h4>
       <p mat-line> {{weatherObjectToShow.sys.sunset | date: "HH:mm:ss"}} </p>
     </mat-list-item>
   </mat-list>
   <mat-list>
     <mat-list-item>
-      <mat-icon mat-list-icon>folder</mat-icon>
-      <h4 mat-line>Type</h4>
+      <h4 mat-line>Type:</h4>
       <p mat-line> {{weatherObjectToShow.sys.type}} </p>
     </mat-list-item>
   </mat-list>

@@ -1,8 +1,7 @@
-#avatar-wrapper {
+.avatar-wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #F44336;
 }
 #panel-avatar{
   color: #FFFFFF;

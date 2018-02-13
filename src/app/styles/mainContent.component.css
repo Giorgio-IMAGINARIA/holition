@@ -8,10 +8,11 @@
 .card-wrap{
     padding:2rem; 
     display: flex;
-    flex-grow: 1;
+    flex-wrap: wrap;
+    /* flex-grow: 1;
     flex-shrink: 1;
-    flex-basis: auto;
-    justify-content: center;
+    flex-basis: auto; */
+    justify-content: space-around;
 }
 
 .generic-card{
