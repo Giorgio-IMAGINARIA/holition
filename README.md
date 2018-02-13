@@ -28,7 +28,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 # EXPLANATION
 
-First problem: the API has difficulties to be accesses and returns an error 405 if the endpoint
+First problem: the API has difficulties to be accessed and returns an error 405 if the endpoint
 
 http://api.openweathermap.org/data/2.5/weather?q=London,uk&appid=6145faa5ad3dafd8fb271ad16c0d7dab
 
