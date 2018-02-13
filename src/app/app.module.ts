@@ -8,8 +8,12 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { AppBarComponent } from './components/appBar.component';
 import { MainContentComponent } from './components/mainContent.component';
-import { MapPanelComponent } from './components/mapPanel.component';
-import { MapDetailsComponent } from './components/mapDetails.component';
+import { MapPanelCloudsComponent } from './components/mapPanelClouds.component';
+import { MapPanelGeneralComponent } from './components/mapPanelGeneral.component';
+import { MapDetailsCloudsComponent } from './components/mapDetailsClouds.component';
+import { MapDetailsGeneralComponent } from './components/mapDetailsGeneral.component';
+import { MapDetailsCoordComponent } from './components/mapDetailsCoord.component';
+import { MapPanelCoordComponent } from './components/mapPanelCoord.component';
 import {
   MatTabsModule,
   MatFormFieldModule,
@@ -41,8 +45,12 @@ import 'hammerjs';
     AppComponent,
     AppBarComponent,
     MainContentComponent,
-    MapPanelComponent,
-    MapDetailsComponent
+    MapPanelCloudsComponent,
+    MapPanelGeneralComponent,
+    MapDetailsCloudsComponent,
+    MapDetailsGeneralComponent,
+    MapDetailsCoordComponent,
+    MapPanelCoordComponent
   ],
   imports: [
     BrowserModule,

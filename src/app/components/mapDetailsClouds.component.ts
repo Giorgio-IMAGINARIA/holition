@@ -33,6 +33,7 @@ interface MapDetails {
         sunset: number,
         type: number
     },
+    visibility: number,
     weather: Array<WeatherArrayObject>,
     wind: {
         deg: number,
@@ -41,16 +42,42 @@ interface MapDetails {
 }
 
 @Component({
-    selector: 'mapDetails',
-    templateUrl: '../templates/mapDetails.component.html',
+    selector: 'mapDetailsClouds',
+    templateUrl: '../templates/mapDetailsClouds.component.html',
     styleUrls: ['../styles/mapDetails.component.css']
 })
-export class MapDetailsComponent implements OnInit {
+export class MapDetailsCloudsComponent implements OnInit {
     //Listeners 
     private mapServiceListener: any;
+
+    folders = [
+        {
+          name: 'Photos',
+          updated: new Date('1/1/16'),
+        },
+        {
+          name: 'Recipes',
+          updated: new Date('1/17/16'),
+        },
+        {
+          name: 'Work',
+          updated: new Date('1/28/16'),
+        }
+      ];
+      notes = [
+        {
+          name: 'Vacation Itinerary',
+          updated: new Date('2/20/16'),
+        },
+        {
+          name: 'Kitchen Remodel',
+          updated: new Date('1/18/16'),
+        }
+      ];
+
     private weatherObjectToShow: MapDetails = {
-        base: '',
-        clouds: { all: '' },
+        base: 'loading...',
+        clouds: { all: 'loading...' },
         cod: 0,
         coord: { lon: 0, lat: 0 },
         dt: 0,
@@ -62,15 +89,16 @@ export class MapDetailsComponent implements OnInit {
             temp_max: 0,
             temp_min: 0
         },
-        name: '',
+        name: 'loading...',
         sys: {
-            country: '',
-            id: '',
+            country: 'loading...',
+            id: 'loading...',
             message: 0,
             sunrise: 0,
             sunset: 0,
             type: 0
         },
+        visibility: 0,
         weather: [],
         wind: {
             deg: 0,
@@ -91,6 +119,7 @@ export class MapDetailsComponent implements OnInit {
     private checkMapService(): void {
         this.mapServiceListener = this.mapService.activeMapStateObservable.subscribe(
             response => {
+                console.log('response: ', response);
                 this.weatherObjectToShow = response;
             },
             error => {

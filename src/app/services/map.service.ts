@@ -39,6 +39,7 @@ interface MapDetails {
         sunset: number,
         type: number
     },
+    visibility: number,
     weather: Array<WeatherArrayObject>,
     wind: {
         deg: number,
@@ -73,6 +74,7 @@ export class MapService {
             sunset: 0,
             type: 0
         },
+        visibility: 0,
         weather: [],
         wind: {
             deg: 0,
