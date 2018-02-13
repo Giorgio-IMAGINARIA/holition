@@ -1,7 +1,7 @@
 // Angular modules
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
 
 // Components
@@ -10,10 +10,11 @@ import { AppBarComponent } from './components/appBar.component';
 import { MainContentComponent } from './components/mainContent.component';
 import { MapPanelCloudsComponent } from './components/mapPanelClouds.component';
 import { MapPanelGeneralComponent } from './components/mapPanelGeneral.component';
-import { MapDetailsCloudsComponent } from './components/mapDetailsClouds.component';
-import { MapDetailsGeneralComponent } from './components/mapDetailsGeneral.component';
-import { MapDetailsCoordComponent } from './components/mapDetailsCoord.component';
 import { MapPanelCoordComponent } from './components/mapPanelCoord.component';
+import { MapPanelMainComponent } from './components/mapPanelMain.component';
+import { MapPanelSysComponent } from './components/mapPanelSys.component';
+import { MapPanelWindComponent } from './components/mapPanelWind.component';
+import { MapPanelWeatherComponent } from './components/mapPanelWeather.component';
 import {
   MatTabsModule,
   MatFormFieldModule,
@@ -47,10 +48,11 @@ import 'hammerjs';
     MainContentComponent,
     MapPanelCloudsComponent,
     MapPanelGeneralComponent,
-    MapDetailsCloudsComponent,
-    MapDetailsGeneralComponent,
-    MapDetailsCoordComponent,
-    MapPanelCoordComponent
+    MapPanelCoordComponent,
+    MapPanelMainComponent,
+    MapPanelSysComponent,
+    MapPanelWindComponent,
+    MapPanelWeatherComponent
   ],
   imports: [
     BrowserModule,

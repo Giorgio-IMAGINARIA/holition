@@ -2,51 +2,43 @@
   <div mat-card-avatar id="avatar-wrapper">
     <mat-icon id="panel-avatar">home</mat-icon>
   </div>
-  <mat-card-title>Weather forecast - General</mat-card-title>
-  <mat-card-subtitle>General overview</mat-card-subtitle>
+  <mat-card-title>Weather forecast - Main</mat-card-title>
+  <mat-card-subtitle>Main details</mat-card-subtitle>
 </mat-card-header>
 <mat-card-content>
   <mat-list>
     <mat-list-item>
       <mat-icon mat-list-icon>folder</mat-icon>
-      <h4 mat-line>Location</h4>
-      <p mat-line> {{weatherObjectToShow.name}} </p>
+      <h4 mat-line>Humidity</h4>
+      <p mat-line> {{weatherObjectToShow.main.humidity}} </p>
     </mat-list-item>
   </mat-list>
   <mat-list>
     <mat-list-item>
       <mat-icon mat-list-icon>folder</mat-icon>
-      <h4 mat-line>Visibility</h4>
-      <p mat-line> {{weatherObjectToShow.visibility}} </p>
+      <h4 mat-line>Pressure</h4>
+      <p mat-line> {{weatherObjectToShow.main.pressure}} </p>
     </mat-list-item>
   </mat-list>
   <mat-list>
     <mat-list-item>
       <mat-icon mat-list-icon>folder</mat-icon>
-      <h4 mat-line>Base</h4>
-      <p mat-line> {{weatherObjectToShow.base}} </p>
+      <h4 mat-line>Temperature</h4>
+      <p mat-line> {{weatherObjectToShow.main.temp}} </p>
     </mat-list-item>
   </mat-list>
   <mat-list>
     <mat-list-item>
       <mat-icon mat-list-icon>folder</mat-icon>
-      <h4 mat-line>Cod</h4>
-      <p mat-line> {{weatherObjectToShow.cod}} </p>
+      <h4 mat-line>Max. temperature</h4>
+      <p mat-line> {{weatherObjectToShow.main.temp_max}} </p>
     </mat-list-item>
   </mat-list>
   <mat-list>
     <mat-list-item>
       <mat-icon mat-list-icon>folder</mat-icon>
-      <h4 mat-line>Dt</h4>
-      <p mat-line> {{weatherObjectToShow.dt}} </p>
+      <h4 mat-line>Min temperature</h4>
+      <p mat-line> {{weatherObjectToShow.main.temp_min}} </p>
     </mat-list-item>
   </mat-list>
-  <mat-list>
-    <mat-list-item>
-      <mat-icon mat-list-icon>folder</mat-icon>
-      <h4 mat-line>Id</h4>
-      <p mat-line> {{weatherObjectToShow.id}} </p>
-    </mat-list-item>
-  </mat-list>
-
 </mat-card-content>

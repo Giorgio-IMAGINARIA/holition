@@ -40,41 +40,14 @@ interface MapDetails {
         speed: number
     }
 }
-
 @Component({
-    selector: 'mapDetailsClouds',
-    templateUrl: '../templates/mapDetailsClouds.component.html',
-    styleUrls: ['../styles/mapDetails.component.css']
+    selector: 'mapPanelWeather',
+    templateUrl: '../templates/mapPanelWeather.component.html',
+    styleUrls: ['../styles/mapPanel.component.css']
 })
-export class MapDetailsCloudsComponent implements OnInit {
+export class MapPanelWeatherComponent implements OnInit {
     //Listeners 
     private mapServiceListener: any;
-
-    folders = [
-        {
-          name: 'Photos',
-          updated: new Date('1/1/16'),
-        },
-        {
-          name: 'Recipes',
-          updated: new Date('1/17/16'),
-        },
-        {
-          name: 'Work',
-          updated: new Date('1/28/16'),
-        }
-      ];
-      notes = [
-        {
-          name: 'Vacation Itinerary',
-          updated: new Date('2/20/16'),
-        },
-        {
-          name: 'Kitchen Remodel',
-          updated: new Date('1/18/16'),
-        }
-      ];
-
     private weatherObjectToShow: MapDetails = {
         base: 'loading...',
         clouds: { all: 'loading...' },
@@ -106,9 +79,8 @@ export class MapDetailsCloudsComponent implements OnInit {
         }
     }
     constructor(
-        private mapService: MapService,
+        private mapService: MapService
     ) { }
-
     ngOnInit(): void {
         this.checkMapService();
     }
@@ -127,5 +99,4 @@ export class MapDetailsCloudsComponent implements OnInit {
             }
         );
     }
-
 }

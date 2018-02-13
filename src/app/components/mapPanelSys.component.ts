@@ -40,13 +40,12 @@ interface MapDetails {
         speed: number
     }
 }
-
 @Component({
-    selector: 'mapPanelGeneral',
-    templateUrl: '../templates/mapPanelGeneral.component.html',
+    selector: 'mapPanelSys',
+    templateUrl: '../templates/mapPanelSys.component.html',
     styleUrls: ['../styles/mapPanel.component.css']
 })
-export class MapPanelGeneralComponent implements OnInit {
+export class MapPanelSysComponent implements OnInit {
     //Listeners 
     private mapServiceListener: any;
     private weatherObjectToShow: MapDetails = {

@@ -2,15 +2,15 @@
   <div mat-card-avatar id="avatar-wrapper">
     <mat-icon id="panel-avatar">home</mat-icon>
   </div>
-  <mat-card-title>Weather forecast - Clouds</mat-card-title>
-  <mat-card-subtitle>Clouds details</mat-card-subtitle>
+  <mat-card-title>Weather forecast - State</mat-card-title>
+  <mat-card-subtitle>State details</mat-card-subtitle>
 </mat-card-header>
 <mat-card-content>
   <mat-list>
-    <mat-list-item>
+    <mat-list-item *ngFor="let state of weatherObjectToShow.weather">
       <mat-icon mat-list-icon>folder</mat-icon>
-      <h4 mat-line>All</h4>
-      <p mat-line> {{weatherObjectToShow.clouds.all}} </p>
+      <h4 mat-line>{{state.main}}</h4>
+      <p mat-line> {{state.description}} </p>
     </mat-list-item>
   </mat-list>
 </mat-card-content>
