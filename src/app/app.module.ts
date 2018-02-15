@@ -15,6 +15,7 @@ import { MapPanelMainComponent } from './components/mapPanelMain.component';
 import { MapPanelSysComponent } from './components/mapPanelSys.component';
 import { MapPanelWindComponent } from './components/mapPanelWind.component';
 import { MapPanelWeatherComponent } from './components/mapPanelWeather.component';
+import { SearchPanelComponent } from './components/searchPanel.component';
 import {
   MatTabsModule,
   MatFormFieldModule,
@@ -52,7 +53,8 @@ import 'hammerjs';
     MapPanelMainComponent,
     MapPanelSysComponent,
     MapPanelWindComponent,
-    MapPanelWeatherComponent
+    MapPanelWeatherComponent,
+    SearchPanelComponent
   ],
   imports: [
     BrowserModule,
